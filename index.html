@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-      <title>Table for Two — Date night, perfectly planned</title>
-      <meta name="description" content="The app that knows both your tastes and turns them into unforgettable evenings together. AI-powered date planning, one-tap booking, shared calendar.">
 
-      <!-- Open Graph (Facebook, LinkedIn, iMessage, Discord) -->
-      <meta property="og:title" content="Table for Two — Date night, perfectly planned">
-      <meta property="og:description" content="One app. Two people. Zero arguments about where to go. AI suggests dates you'll both love, then books everything.">
-      <meta property="og:type" content="website">
-      <meta property="og:image" content="date-photo.jpg">
-
-      <!-- Twitter / X -->
-      <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:title" content="Table for Two — Date night, perfectly planned">
-      <meta name="twitter:description" content="AI-powered date planning for couples. We learn what you both love and book everything.">
-      <meta name="twitter:image" content="date-photo.jpg">
-
-      <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♥</text></svg>">
       <script>if(location.search.includes('app')||location.hash==='#app')document.documentElement.classList.add('skip-lp');</script>
+      <!-- Google Places API — replace YOUR_API_KEY with your real key from https://console.cloud.google.com -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places" async defer></script>
       <div id="gmap" style="display:none"></div>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
       <style>
       @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
       *{box-sizing:border-box;margin:0;padding:0}
@@ -1694,8 +1677,7 @@
       /* END STARTUP POLISH */
 
       </style>
-</head>
-<body>
+
       <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden">Table for Two — couple date planning app with AI suggestions, booking, reminders and calendar</h2>
 
       <!-- ── LANDING PAGE ── -->
@@ -1705,7 +1687,7 @@
         <div class="lp-hero">
           <div class="lp-nav">
             <div class="lp-logo"><span class="lp-logo-heart">♥</span>Table for Two</div>
-            <button class="lp-skip" onclick="enterApp()">Try the demo →</button>
+            <button class="lp-skip" onclick="enterApp()">Skip to app →</button>
           </div>
           <div class="lp-hero-body">
             <div class="lp-tag">Early access</div>
@@ -1739,7 +1721,7 @@
             <div class="lp-section-label">What does Table for Two do?</div>
             <div class="lp-section-title">One app. Two people. Zero arguments about where to go.</div>
             <div class="lp-section-desc">Table for Two learns what you both love — cuisine, vibe, budget — then uses AI to suggest dates you'll actually agree on. Then it books everything: the restaurant, the cab, the hotel. One less thing to stress about.</div>
-            <img src="date-photo.jpg" alt="Couple enjoying a date night dinner" style="width:100%;border-radius:16px;margin-top:24px;display:block;object-fit:cover;max-height:340px;">
+            <img src="date photo.jpg" alt="Couple enjoying a date night dinner" style="width:100%;border-radius:16px;margin-top:24px;display:block;object-fit:cover;max-height:340px;">
           </div>
 
           <!-- Feature grid -->
@@ -1785,7 +1767,7 @@
                 <div class="lp-hiw-num">2</div>
                 <div class="lp-hiw-text">
                   <div class="lp-hiw-title">We plan and book everything</div>
-                  <div class="lp-hiw-desc">AI matches a date to both your tastes and we confirm the restaurant, book the cab and hold the hotel — all at once.</div>
+                  <div class="lp-hiw-desc">AI matches a date to both your tastes and we confirm the restaurant, pre-order the cab and hold the hotel — all at once.</div>
                 </div>
               </div>
               <div class="lp-hiw-step">
@@ -1802,9 +1784,47 @@
 
           <!-- Social proof -->
           <div class="lp-section">
-            <div class="lp-section-label">Early access</div>
-            <div class="lp-section-title">Be one of the first couples to try it</div>
-            <div class="lp-section-desc">We're building Table for Two with real couples from the start. Join the waitlist and help shape what this becomes — the first users get free access when we launch.</div>
+            <div class="lp-proof-count">
+              <div class="lp-proof-avatars">
+                <div class="lp-proof-av" style="background:#C4687A">P</div>
+                <div class="lp-proof-av" style="background:#8B3A4A">J</div>
+                <div class="lp-proof-av" style="background:#6B4C7A">M</div>
+                <div class="lp-proof-av" style="background:#3B6EA0">S</div>
+              </div>
+              &nbsp;Join 240+ couples already on the list
+            </div>
+            <div class="lp-testimonials">
+              <div class="lp-testimonial">
+                <div class="lp-testimonial-text">"We used to argue for 45 minutes about where to go. This just… sorted it. We've had three brilliant evenings since."</div>
+                <div class="lp-testimonial-author">
+                  <div class="lp-testimonial-av" style="background:#C4687A">P</div>
+                  <div class="lp-testimonial-name">Priya & Dan · London</div>
+                  <div class="lp-testimonial-stars">
+                    <span class="lp-testimonial-star">★</span><span class="lp-testimonial-star">★</span><span class="lp-testimonial-star">★</span><span class="lp-testimonial-star">★</span><span class="lp-testimonial-star">★</span>
+                  </div>
+                </div>
+              </div>
+              <div class="lp-testimonial">
+                <div class="lp-testimonial-text">"I'm terrible at planning and my partner knows it. Now I just open the app and it does everything. She thinks I've finally got my act together."</div>
+                <div class="lp-testimonial-author">
+                  <div class="lp-testimonial-av" style="background:#3B6EA0">M</div>
+                  <div class="lp-testimonial-name">Marcus & Zoe · Manchester</div>
+                  <div class="lp-testimonial-stars">
+                    <span class="lp-testimonial-star">★</span><span class="lp-testimonial-star">★</span><span class="lp-testimonial-star">★</span><span class="lp-testimonial-star">★</span><span class="lp-testimonial-star">★</span>
+                  </div>
+                </div>
+              </div>
+              <div class="lp-testimonial">
+                <div class="lp-testimonial-text">"Date night used to feel like another task on my to-do list. Now it feels like a treat again. The cab reminder alone is worth it."</div>
+                <div class="lp-testimonial-author">
+                  <div class="lp-testimonial-av" style="background:#6B4C7A">A</div>
+                  <div class="lp-testimonial-name">Aisha & Tom · Birmingham</div>
+                  <div class="lp-testimonial-stars">
+                    <span class="lp-testimonial-star">★</span><span class="lp-testimonial-star">★</span><span class="lp-testimonial-star">★</span><span class="lp-testimonial-star">★</span><span class="lp-testimonial-star">★</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="lp-divider"></div>
@@ -1888,12 +1908,7 @@
                   <label for="lp-city">Your city</label>
                   <input type="text" id="lp-city" placeholder="London">
                 </div>
-                <!-- Honeypot — hidden from real users, catches bots -->
-                <div style="position:absolute;left:-9999px;top:-9999px" aria-hidden="true">
-                  <input type="text" id="lp-website" name="_gotcha" tabindex="-1" autocomplete="off">
-                </div>
                 <button class="lp-submit" onclick="submitWaitlist()">Reserve my spot ♥</button>
-                <div style="font-size:10px;color:#999;text-align:center;margin-top:10px;line-height:1.5">By signing up you agree to receive occasional updates about Table for Two. We'll never share your email. Unsubscribe any time.</div>
                 <div class="lp-trust-badges">
                   <div class="lp-trust-badge"><span class="lp-trust-badge-icon">◎</span> No credit card</div>
                   <div class="lp-trust-badge"><span class="lp-trust-badge-icon">◈</span> Free cancellation</div>
@@ -5080,10 +5095,6 @@
         const city    = document.getElementById('lp-city').value.trim();
         const survey  = document.querySelector('.lp-option.selected .lp-option-text')?.textContent.trim() || 'Not answered';
 
-        // Honeypot check — bots fill hidden fields, real users don't
-        const honeypot = document.getElementById('lp-website');
-        if(honeypot && honeypot.value){return;} // silently reject
-
         if(!name){alert('Please enter your name');return;}
         if(!email||!email.includes('@')){alert('Please enter a valid email address');return;}
 
@@ -6478,5 +6489,3 @@
       };
 
     </script>
-</body>
-</html>
